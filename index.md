@@ -2,8 +2,6 @@
 layout: default
 ---
 
-Collection of open-source development tools avaiable for AURIX Tricore MCUs.
-
 ## Tricore GCC
 
 URL: [github.com/NoMore201/tricore-gcc-toolchain-11.3.0](https://github.com/NoMore201/tricore-gcc-toolchain-11.3.0)
@@ -18,3 +16,9 @@ new features and fix existing bugs. Eventually switch back to the original
 repository if authors are again interested in it.
 
 You can find a link to latest release on the top of page.
+
+Features:
+
+- Compiler based on mainstream GCC 11.3.1 with applied TriCore specific patches
+- Binutils based on version 2.40
+- libc based on Cygwin newlib version 4.3.0

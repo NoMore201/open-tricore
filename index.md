@@ -44,7 +44,7 @@ Hardware support
 is basically absent; a few machines with basic CPU functionality are implemented.
 
 Tricore emulation is usually not present in pre-compiled packages: you need
-to compile it yourself by providing the option --target-list=tricore-softmmu.
+to compile it yourself by providing the option `--target-list=tricore-softmmu`.
 
 You can find more info on
 [this GIST](https://gist.github.com/bri3d/5429c0b25346a0830c01042e77d6914c).

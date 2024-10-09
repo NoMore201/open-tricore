@@ -4,6 +4,9 @@ layout: default
 
 - [Tricore GCC](#tricore-gcc)
   - [Release artifacts](#release-artifacts)
+  - [Example projects](#example-projects)
+    - [aurix-cmake-code-sample](#aurix-cmake-code-sample)
+    - [Zephyr RTOS Tricore experimental patch](#zephyr-rtos-tricore-experimental-patch)
 - [QEMU](#qemu)
 
 ## Tricore GCC
@@ -27,6 +30,28 @@ win32 version are available.
 You can find the latest binary release by clicking the download link on top of
 the page. This change is awaiting PR review on the main repository, and may be
 available there in the future.
+
+### Example projects
+
+Here are some example projects making use of the open source compiler.
+
+#### aurix-cmake-code-sample
+
+URL: [NoMore201/aurix-cmake-code-sample](https://github.com/NoMore201/aurix-cmake-code-sample)
+
+This repository hosts the Blinky_LED_1_KIT_TC334_L sample from
+[Infineon/AURIX_code_examples](https://github.com/Infineon/AURIX_code_examples)
+repository, converted to make use of CMake as build system. It also provides
+configuration for CMake presets, clang-tidy, clang-format and custom compiler
+CLion config.
+
+#### Zephyr RTOS Tricore experimental patch
+
+URL: [go2sh/zephyr](https://github.com/go2sh/zephyr/tree/tricore).
+
+Zephyr RTOS fork with experimental support for Tricore architecture.
+For information on how to build it, refer to project documentation and
+[this discussion](https://github.com/zephyrproject-rtos/zephyr/discussions/68826#discussioncomment-9296297).
 
 ## QEMU
 

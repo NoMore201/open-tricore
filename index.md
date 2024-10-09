@@ -3,6 +3,7 @@ layout: default
 ---
 
 - [Tricore GCC](#tricore-gcc)
+  - [Release artifacts](#release-artifacts)
 - [QEMU](#qemu)
 
 ## Tricore GCC
@@ -15,11 +16,17 @@ Tricore compiler based on GCC 11.3 source code. Features:
 - Binutils based on version 2.40
 - libc based on Cygwin newlib version 4.3.0
 
-You can build it manually following build instruction or download release
-archive coming from my fork at the top of the page, compiled through
-Github Actions pipelines
-[NoMore201/tricore-gcc-toolchain](https://github.com/NoMore201/tricore-gcc-toolchain).
-This change is awaiting PR review in the main repository.
+### Release artifacts
+
+Main repository does not provide binary releases of the compiler. I implemented
+Github Actions pipelines support in
+[my fork of tricore-gcc-toolchain](https://github.com/NoMore201/tricore-gcc-toolchain) for publishing build artifact on each push, and publish
+release artifacts when a new release is created through Github. Both linux and
+win32 version are available.
+
+You can find the latest binary release by clicking the download link on top of
+the page. This change is awaiting PR review on the main repository, and may be
+available there in the future.
 
 ## QEMU
 

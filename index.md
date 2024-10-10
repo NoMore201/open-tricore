@@ -19,13 +19,12 @@ Tricore compiler based on GCC 11.3 source code. Features:
 - Binutils based on version 2.40
 - libc based on Cygwin newlib version 4.3.0
 
-## Release artifacts
-
 Win32 and Linux binaries are available from
 [NoMore201/tricore-gcc-toolchain](https://github.com/NoMore201/tricore-gcc-toolchain),
-built including latest patches from main EEESlab repositories.
+built from Github Action CI including latest patches from main EEESlab repositories.
 
 - Latest release: [NoMore201/tricore-gcc-toolchain/releases](https://github.com/NoMore201/tricore-gcc-toolchain/releases/latest)
+- Build pipeline: [build.yml](https://github.com/NoMore201/tricore-gcc-toolchain/blob/main/.github/workflows/build.yml)
 
 ## Example projects
 

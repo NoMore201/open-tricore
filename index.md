@@ -9,9 +9,9 @@ layout: default
     - [Zephyr RTOS Tricore experimental patch](#zephyr-rtos-tricore-experimental-patch)
 - [QEMU](#qemu)
 
-## Tricore GCC
+# Tricore GCC
 
-URL: [EEESlab/tricore-gcc-toolchain-11.3.0](https://github.com/EEESlab/tricore-gcc-toolchain-11.3.0)
+- [EEESlab/tricore-gcc-toolchain-11.3.0](https://github.com/EEESlab/tricore-gcc-toolchain-11.3.0)
 
 Tricore compiler based on GCC 11.3 source code. Features:
 
@@ -19,25 +19,21 @@ Tricore compiler based on GCC 11.3 source code. Features:
 - Binutils based on version 2.40
 - libc based on Cygwin newlib version 4.3.0
 
-### Release artifacts
+## Release artifacts
 
-Main repository does not provide binary releases of the compiler. I implemented
-Github Actions pipelines support in
-[my fork of tricore-gcc-toolchain](https://github.com/NoMore201/tricore-gcc-toolchain) for publishing build artifact on each push, and publish
-release artifacts when a new release is created through Github. Both linux and
-win32 version are available.
+Win32 and Linux binaries are available from
+[NoMore201/tricore-gcc-toolchain](https://github.com/NoMore201/tricore-gcc-toolchain),
+built including latest patches from main EEESlab repositories.
 
-You can find the latest binary release by clicking the download link on top of
-the page. This change is awaiting PR review on the main repository, and may be
-available there in the future.
+- Latest release: [NoMore201/tricore-gcc-toolchain/releases](https://github.com/NoMore201/tricore-gcc-toolchain/releases/latest)
 
-### Example projects
+## Example projects
 
 Here are some example projects making use of the open source compiler.
 
-#### aurix-cmake-code-sample
+### aurix-cmake-code-sample
 
-URL: [NoMore201/aurix-cmake-code-sample](https://github.com/NoMore201/aurix-cmake-code-sample)
+- [NoMore201/aurix-cmake-code-sample](https://github.com/NoMore201/aurix-cmake-code-sample)
 
 This repository hosts the Blinky_LED_1_KIT_TC334_L sample from
 [Infineon/AURIX_code_examples](https://github.com/Infineon/AURIX_code_examples)
@@ -45,7 +41,7 @@ repository, converted to make use of CMake as build system. It also provides
 configuration for CMake presets, clang-tidy, clang-format and custom compiler
 CLion config.
 
-#### Zephyr RTOS Tricore experimental patch
+### Zephyr RTOS Tricore experimental patch
 
 URL: [go2sh/zephyr](https://github.com/go2sh/zephyr/tree/tricore).
 
@@ -53,7 +49,7 @@ Zephyr RTOS fork with experimental support for Tricore architecture.
 For information on how to build it, refer to project documentation and
 [this discussion](https://github.com/zephyrproject-rtos/zephyr/discussions/68826#discussioncomment-9296297).
 
-## QEMU
+# QEMU
 
 URL: [https://gitlab.com/qemu-project/qemu](https://gitlab.com/qemu-project/qemu)
 
